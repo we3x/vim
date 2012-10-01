@@ -1,3 +1,4 @@
+" Install new bundles with 'vim +BundleInstall +qall'
 set nocompatible               " be iMproved
 filetype off                   " required!
 
