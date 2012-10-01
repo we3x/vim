@@ -1,4 +1,7 @@
-vim
+meka's vim config
 ===
 
-My VIM config
+Upon git clone:
+ $ git submodule init
+ $ git submodule update
+ $vim +BundleInstall +qall'
