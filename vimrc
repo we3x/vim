@@ -10,6 +10,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'scrooloose/nerdtree'
+Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 
 filetype plugin indent on     " required!
@@ -32,9 +33,15 @@ set tw=0
 set formatoptions=l
 set lbr
 
+let g:gist_clip_command = 'xclip -selection clipboard'
+let g:gist_detect_filetype = 1
+
 nnoremap nt :tabe <CR>
 nnoremap ZW :w <CR>
 nnoremap H :tabp <CR>
 nnoremap L :tabn <CR>
+
 nnoremap <Leader>i :set smartindent!<CR>:set autoindent!<CR>
 nnoremap <Leader>c :set ignorecase!<CR>
+
+nnoremap <Leader>g :Gist<CR>
