@@ -45,3 +45,7 @@ nnoremap <Leader>i :set smartindent!<CR>:set autoindent!<CR>
 nnoremap <Leader>c :set ignorecase!<CR>
 
 nnoremap <Leader>g :Gist<CR>
+
+highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+match ExtraWhitespace /\t\|\s\+\%#\@<!$/
+autocmd InsertLeave * redraw!
