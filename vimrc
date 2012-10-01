@@ -1,11 +1,17 @@
-filetype off
+set nocompatible               " be iMproved
+filetype off                   " required!
 
-" Pathogen initialization
-call pathogen#infect()
-call pathogen#helptags()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
-filetype indent plugin on
-syntax enable
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+Bundle 'scrooloose/nerdtree'
+Bundle 'mattn/gist-vim'
+
+filetype plugin indent on     " required!
 
 nnoremap <silent> <F2> :NERDTreeToggle<cr>
 inoremap <silent> <F2> <ESC>:NERDTreeToggle<cr>
