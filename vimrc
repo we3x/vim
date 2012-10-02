@@ -12,6 +12,7 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
+Bundle 'tpope/vim-fugitive'
 
 filetype plugin indent on     " required!
 
