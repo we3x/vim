@@ -17,11 +17,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'vim-scripts/L9'
 Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'sethbc/fuzzyfinder_textmate'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'honza/snipmate-snippets'
-Bundle 'garbas/vim-snipmate'
-Bundle 'mekanix/vim-puppet'
+Bundle 'SirVer/ultisnips'
+Bundle 'rodjek/vim-puppet'
 Bundle 'scrooloose/syntastic'
 
 filetype plugin indent on     " required!
@@ -63,3 +60,5 @@ nnoremap <Leader>g :Gist<CR>
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\t\|\s\+\%#\@<!$/
 autocmd InsertLeave * redraw!
+
+let g:UltiSnipsDontReverseSearchPath="1"
