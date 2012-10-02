@@ -6,19 +6,24 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 Bundle 'scrooloose/nerdtree'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
+Bundle 'git.zip'
 Bundle 'tpope/vim-fugitive'
+Bundle 'vim-scripts/L9'
+Bundle 'vim-scripts/FuzzyFinder'
+Bundle 'sethbc/fuzzyfinder_textmate'
 
 filetype plugin indent on     " required!
 
 nnoremap <silent> <F2> :NERDTreeToggle<cr>
 inoremap <silent> <F2> <ESC>:NERDTreeToggle<cr>
 vnoremap <silent> <F2> <ESC>:NERDTreeToggle<cr>
+map <leader>t :FuzzyFinderTextMate<CR>
 
 set autoindent
 set autoread
