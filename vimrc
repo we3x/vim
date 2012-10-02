@@ -17,8 +17,15 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'vim-scripts/L9'
 Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'sethbc/fuzzyfinder_textmate'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'honza/snipmate-snippets'
+Bundle 'garbas/vim-snipmate'
+Bundle 'mekanix/vim-puppet'
+Bundle 'scrooloose/syntastic'
 
 filetype plugin indent on     " required!
+filetype plugin on
 
 nnoremap <silent> <F2> :NERDTreeToggle<cr>
 inoremap <silent> <F2> <ESC>:NERDTreeToggle<cr>
@@ -38,6 +45,7 @@ set tabstop=4
 set tw=0
 set formatoptions=l
 set lbr
+set mouse=a
 
 let g:gist_clip_command = 'xclip -selection clipboard'
 let g:gist_detect_filetype = 1
