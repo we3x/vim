@@ -1,3 +1,2 @@
-vim/bundle/gist-vim/
-vim/bundle/webapi-vim/
-vim/bundle/nerdtree/
+vim/bundle
+!vim/bundle/vundle/
