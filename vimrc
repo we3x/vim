@@ -20,6 +20,7 @@ Bundle 'sethbc/fuzzyfinder_textmate'
 Bundle 'SirVer/ultisnips'
 Bundle 'rodjek/vim-puppet'
 Bundle 'scrooloose/syntastic'
+Bundle 'Lokaltog/vim-powerline'
 
 filetype plugin indent on     " required!
 filetype plugin on
@@ -62,3 +63,9 @@ match ExtraWhitespace /\t\|\s\+\%#\@<!$/
 autocmd InsertLeave * redraw!
 
 let g:UltiSnipsDontReverseSearchPath="1"
+
+set nocompatible   " Disable vi-compatibility
+set laststatus=2   " Always show the statusline
+set encoding=utf-8 " Necessary to show Unicode glyphs
+
+set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
