@@ -65,3 +65,5 @@ map <leader>t :FuzzyFinderTextMate<CR>
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\t\|\s\+\%#\@<!$/
 autocmd InsertLeave * redraw!
+
+syntax on
