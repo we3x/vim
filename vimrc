@@ -45,6 +45,7 @@ set nocompatible   " Disable vi-compatibility
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
+set bs=2
 
 let g:gist_clip_command = 'xclip -selection clipboard'
 let g:gist_detect_filetype = 1
@@ -71,3 +72,4 @@ autocmd InsertLeave * redraw!
 autocmd BufWritePre * :%s/\s\+$//e
 
 syntax on
+color koehler
