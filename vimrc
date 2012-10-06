@@ -21,6 +21,7 @@ Bundle 'SirVer/ultisnips'
 Bundle 'rodjek/vim-puppet'
 Bundle 'scrooloose/syntastic'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'godlygeek/tabular'
 
 filetype plugin indent on     " required!
 filetype plugin on
