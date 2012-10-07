@@ -28,8 +28,9 @@ snippet file "File resource type" !b
 file
 {
   "${1:name}":
-    source => "puppet://${2:path}",
-    mode   => ${3:mode},
+    ensure => ${2:present},
+    source => "puppet://${3:path}",
+    mode   => ${4:mode},
 }
 endsnippet
 
@@ -37,8 +38,8 @@ snippet group "Group resource type" !b
 group
 {
   "${1:groupname}":
-    ensure => ${3:present},
-    gid    => ${2:gid},
+    ensure => ${2:present},
+    gid    => ${3:gid},
 }
 endsnippet
 
@@ -59,7 +60,8 @@ endsnippet
 snippet exec "Exec resource type" !b
 exec
 {
-  "${1:command}":
+  "${1:command-name}":
+    command => "${2:command}"
 }
 endsnippet
 
@@ -67,10 +69,11 @@ snippet cron "Cron resource type" !b
 cron
 {
   "${1:name}":
-    user    => ${2:user},
-    command => "${3:command}",
-    minute  => ${3:minute},
-    hour    => ${4:hour},
+    ensure  => ${2:present}
+    user    => ${3:user},
+    command => "${4:command}",
+    minute  => ${5:minute},
+    hour    => ${6:hour},
 }
 endsnippet
 
@@ -78,9 +81,9 @@ snippet mount "Mount resource type" !b
 mount
 {
   "${1:path}":
+    ensure  => mounted,
     device  => "${2:/dev}",
     fstype  => "${3:filesystem}",
-    ensure  => mounted,
     options => "rw,errors=remount-ro",
 }
 endsnippet

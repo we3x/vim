@@ -22,6 +22,8 @@ Bundle 'rodjek/vim-puppet'
 Bundle 'scrooloose/syntastic'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'godlygeek/tabular'
+Bundle 'mjbrownie/vim-htmldjango_omnicomplete'
+Bundle 'vim-scripts/taglist.vim'
 
 filetype plugin indent on     " required!
 filetype plugin on
