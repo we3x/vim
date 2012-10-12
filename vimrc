@@ -77,7 +77,8 @@ match ExtraWhitespace /\t\|\s\+\%#\@<!$/
 
 autocmd InsertLeave * redraw!
 autocmd BufWritePre * :%s/\s\+$//e
-au BufRead *com.log* setf httplog
+au BufRead *.log* setf httplog
+au BufRead *.err* setf httplog
 
 syntax on
 color koehler
