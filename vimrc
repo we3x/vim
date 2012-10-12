@@ -26,6 +26,7 @@ Bundle 'mjbrownie/vim-htmldjango_omnicomplete'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'Liberationtech/taskpacifist'
 Bundle 'framallo/taskwarrior.vim'
+Bundle 'vim-scripts/httplog'
 
 filetype plugin indent on     " required!
 filetype plugin on
@@ -76,6 +77,7 @@ match ExtraWhitespace /\t\|\s\+\%#\@<!$/
 
 autocmd InsertLeave * redraw!
 autocmd BufWritePre * :%s/\s\+$//e
+au BufRead *com.log* setf httplog
 
 syntax on
 color koehler
