@@ -28,6 +28,7 @@ Bundle 'Liberationtech/taskpacifist'
 Bundle 'framallo/taskwarrior.vim'
 Bundle 'vim-scripts/httplog'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'vim-scripts/lighttpd-syntax'
 
 filetype plugin indent on     " required!
 filetype plugin on
@@ -80,6 +81,7 @@ autocmd InsertLeave * redraw!
 autocmd BufWritePre * :%s/\s\+$//e
 au BufRead *.log* setf httplog
 au BufRead *.err* setf httplog
+au BufNewFile,BufRead /etc/lighttpd/* set filetype=lighttpd
 
 syntax on
 color koehler
