@@ -73,6 +73,7 @@ vnoremap <silent> <F2> <ESC>:NERDTreeToggle<cr>
 map <leader>t :FuzzyFinderTextMate<CR>
 map <leader>y "+yy<CR>
 map <leader>p "+p
+map <bs> X
 
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\t\|\s\+\%#\@<!$/
