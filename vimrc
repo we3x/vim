@@ -29,6 +29,7 @@ Bundle 'framallo/taskwarrior.vim'
 Bundle 'vim-scripts/httplog'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'vim-scripts/lighttpd-syntax'
+Bundle 'BufOnly.vim'
 
 filetype plugin indent on     " required!
 filetype plugin on
@@ -74,6 +75,7 @@ map <leader>t :FuzzyFinderTextMate<CR>
 map <leader>y "+yy<CR>
 map <leader>p "+p
 map <bs> X
+nnoremap <leader>bo :BufOnly<CR>
 
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\t\|\s\+\%#\@<!$/
