@@ -67,17 +67,18 @@ nnoremap nt :tabe <CR>
 nnoremap ZW :w <CR>
 nnoremap H :tabp <CR>
 nnoremap L :tabn <CR>
-nnoremap <Leader>i :set smartindent!<CR>:set autoindent!<CR>
-nnoremap <Leader>c :set ignorecase!<CR>
-nnoremap <Leader>g :Gist<CR>
-nnoremap <silent> <F2> :NERDTreeToggle<cr>
-inoremap <silent> <F2> <ESC>:NERDTreeToggle<cr>
-vnoremap <silent> <F2> <ESC>:NERDTreeToggle<cr>
-map <leader>t :FuzzyFinderTextMate<CR>
-map <leader>y "+yy<CR>
-map <leader>p "+p
-map <bs> X
-nnoremap <leader>bo :BufOnly<CR>
+nnoremap <LEADER>i :set smartindent!<CR>:set autoindent!<CR>
+nnoremap <LEADER>c :set ignorecase!<CR>
+nnoremap <LEADER>g :Gist<CR>
+nnoremap <SILENT> <F2> :NERDTreeToggle<CR>
+inoremap <SILENT> <F2> <ESC>:NERDTreeToggle<CR>
+vnoremap <SILENT> <F2> <ESC>:NERDTreeToggle<CR>
+map <LEADER>t :FuzzyFinderTextMate<CR>
+map <LEADER>y "+yy<CR>
+map <LEADER>p "+p
+map <BS> X
+nnoremap <LEADER>bo :BufOnly<CR>
+nnoremap <LEADER>h :set hlsearch!<CR>
 
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\t\|\s\+\%#\@<!$/
