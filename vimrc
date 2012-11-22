@@ -79,6 +79,7 @@ map <LEADER>p "+p
 map <BS> X
 nnoremap <LEADER>bo :BufOnly<CR>
 nnoremap <LEADER>h :set hlsearch!<CR>
+nnoremap <LEADER>n :set number!<CR>
 
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\t\|\s\+\%#\@<!$/
