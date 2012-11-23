@@ -31,6 +31,7 @@ Bundle 'plasticboy/vim-markdown'
 Bundle 'vim-scripts/lighttpd-syntax'
 Bundle 'BufOnly.vim'
 Bundle 'tmatilai/gitolite.vim'
+Bundle 'aliva/vim-fish'
 
 filetype plugin indent on     " required!
 filetype plugin on
