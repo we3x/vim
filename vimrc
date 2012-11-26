@@ -59,6 +59,7 @@ set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
 set bs=2
 set noswapfile
 set hlsearch
+set shell=/bin/bash
 
 let g:gist_clip_command = 'xclip -selection clipboard'
 let g:gist_detect_filetype = 1
