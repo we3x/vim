@@ -29,7 +29,7 @@ file
 {
   "${1:name}":
     ensure => ${2:present},
-    source => "puppet://${3:path}",
+    source => "puppet:///modules/${3:path}",
     mode   => ${4:mode},
 }
 endsnippet
@@ -69,11 +69,10 @@ snippet cron "Cron resource type" !b
 cron
 {
   "${1:name}":
-    ensure  => ${2:present}
+    ensure  => ${2:present},
     user    => ${3:user},
     command => "${4:command}",
     minute  => ${5:minute},
-    hour    => ${6:hour},
 }
 endsnippet
 
