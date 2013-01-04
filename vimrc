@@ -32,6 +32,7 @@ Bundle 'vim-scripts/lighttpd-syntax'
 Bundle 'BufOnly.vim'
 Bundle 'tmatilai/gitolite.vim'
 Bundle 'aliva/vim-fish'
+Bundle 'tomasr/molokai'
 
 filetype plugin indent on     " required!
 filetype plugin on
@@ -60,6 +61,7 @@ set bs=2
 set noswapfile
 set hlsearch
 set shell=/bin/bash
+set incsearch
 
 let g:gist_clip_command = 'xclip -selection clipboard'
 let g:gist_detect_filetype = 1
@@ -108,3 +110,5 @@ function! s:align()
     call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
   endif
 endfunction
+
+colorscheme molokai
