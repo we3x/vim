@@ -33,6 +33,7 @@ Bundle 'BufOnly.vim'
 Bundle 'tmatilai/gitolite.vim'
 Bundle 'aliva/vim-fish'
 Bundle 'tomasr/molokai'
+Bundle 'YankRing.vim'
 
 filetype plugin indent on     " required!
 filetype plugin on
@@ -67,29 +68,33 @@ let g:gist_clip_command = 'xclip -selection clipboard'
 let g:gist_detect_filetype = 1
 let g:UltiSnipsDontReverseSearchPath="1"
 
-nnoremap nt :tabe <CR>
-nnoremap ZW :w <CR>
-nnoremap H :tabp <CR>
-nnoremap L :tabn <CR>
-nnoremap <LEADER>i :set smartindent!<CR>:set autoindent!<CR>
-nnoremap <LEADER>c :set ignorecase!<CR>
-nnoremap <LEADER>g :Gist<CR>
-nnoremap <SILENT> <F2> :NERDTreeToggle<CR>
-inoremap <SILENT> <F2> <ESC>:NERDTreeToggle<CR>
-vnoremap <SILENT> <F2> <ESC>:NERDTreeToggle<CR>
-map <LEADER>t :FuzzyFinderTextMate<CR>
-map <LEADER>y "+yy<CR>
-map <LEADER>p "+p
-map <BS> X
-nnoremap <LEADER>bo :BufOnly<CR>
-nnoremap <LEADER>h :set hlsearch!<CR>
-nnoremap <LEADER>n :set number!<CR>
+nnoremap nt :tabe <cr>
+nnoremap ZW :w <cr>
+nnoremap H :tabp <cr>
+nnoremap L :tabn <cr>
+nnoremap <leader>i :set smartindent!<cr>:set autoindent!<cr>
+nnoremap <leader>c :set ignorecase!<cr>
+nnoremap <leader>g :Gist<cr>
+nnoremap <f2> :NERDTreeToggle<cr>
+inoremap <f2> <esc>:NERDTreeToggle<cr>
+vnoremap <f2> <esc>:NERDTreeToggle<cr>
+map <leader>t :FuzzyFinderTextMate<cr>
+map <leader>y "+yy<cr>
+map <leader>p "+p
+map <bs> X
+nnoremap <leader>bo :BufOnly<cr>
+nnoremap <leader>h :set hlsearch!<cr>
+nnoremap <leader>n :set number!<cr>
+nnoremap <leader>m :NERDTreeFocus<cr>
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
 
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\t\|\s\+\%#\@<!$/
 
 autocmd InsertLeave * redraw!
 autocmd BufWritePre * :%s/\s\+$//e
+
 au BufRead *.log* setf httplog
 au BufRead *.err* setf httplog
 au BufNewFile,BufRead /etc/lighttpd/* set filetype=lighttpd
@@ -98,7 +103,7 @@ syntax on
 color koehler
 
 
-inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
+inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<cr>a
 
 function! s:align()
   let p = '^\s*|\s.*\s|\s*$'
