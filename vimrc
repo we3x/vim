@@ -88,19 +88,20 @@ nnoremap <leader>n :set number!<cr>
 nnoremap <leader>m :NERDTreeFocus<cr>
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
 
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\t\|\s\+\%#\@<!$/
 
 autocmd InsertLeave * redraw!
 autocmd BufWritePre * :%s/\s\+$//e
-
-au BufRead *.log* setf httplog
-au BufRead *.err* setf httplog
-au BufNewFile,BufRead /etc/lighttpd/* set filetype=lighttpd
+autocmd BufRead *.log* setf httplog
+autocmd BufRead *.err* setf httplog
+autocmd BufNewFile,BufRead /etc/lighttpd/* set filetype=lighttpd
+autocmd BufWritePost *.htmls make
 
 syntax on
-color koehler
 
 
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<cr>a
