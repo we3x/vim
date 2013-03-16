@@ -90,6 +90,10 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
+nnoremap <Up>    <nop>
+nnoremap <Down>  <nop>
+nnoremap <Left>  <nop>
+nnoremap <Right> <nop>
 
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\t\|\s\+\%#\@<!$/
