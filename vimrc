@@ -34,6 +34,7 @@ Bundle 'tmatilai/gitolite.vim'
 Bundle 'aliva/vim-fish'
 Bundle 'tomasr/molokai'
 Bundle 'YankRing.vim'
+Bundle 'paradigm/vim-multicursor'
 
 filetype plugin indent on     " required!
 filetype plugin on
