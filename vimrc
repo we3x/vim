@@ -65,6 +65,7 @@ set noswapfile
 set hlsearch
 set shell=/bin/bash
 set incsearch
+set visualbell t_vb=
 
 let g:gist_clip_command = 'xclip -selection clipboard'
 let g:gist_detect_filetype = 1
