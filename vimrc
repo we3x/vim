@@ -71,7 +71,7 @@ let g:gist_clip_command = 'xclip -selection clipboard'
 let g:gist_detect_filetype = 1
 let g:UltiSnipsDontReverseSearchPath="1"
 
-nnoremap nt :tabe <cr>
+nnoremap NT :tabe <cr>
 nnoremap ZW :w <cr>
 nnoremap H :tabp <cr>
 nnoremap L :tabn <cr>
