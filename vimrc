@@ -66,6 +66,8 @@ set hlsearch
 set shell=/bin/bash
 set incsearch
 set visualbell t_vb=
+set showmode
+set pastetoggle=<F3> " Toggle paste on F3
 
 let g:gist_clip_command = 'xclip -selection clipboard'
 let g:gist_detect_filetype = 1
@@ -93,6 +95,8 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
+nnoremap <F3> :set invpaste paste?<CR>
+
 
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\t\|\s\+\%#\@<!$/
