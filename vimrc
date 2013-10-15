@@ -36,6 +36,7 @@ Bundle 'tomasr/molokai'
 Bundle 'YankRing.vim'
 Bundle 'paradigm/vim-multicursor'
 Bundle 'Osse/double-tap'
+Bundle 'mileszs/ack.vim'
 
 filetype plugin indent on     " required!
 filetype plugin on
@@ -81,6 +82,10 @@ nnoremap <leader>i :set smartindent!<cr>:set autoindent!<cr>
 nnoremap <leader>c :set ignorecase!<cr>
 nnoremap <leader>g :Gist<cr>
 nnoremap <f2> :NERDTreeToggle<cr>
+nnoremap <Left> <nop>
+nnoremap <Right> <nop>
+nnoremap <Up> <nop>
+nnoremap <Down> <nop>
 inoremap <f2> <esc>:NERDTreeToggle<cr>
 vnoremap <f2> <esc>:NERDTreeToggle<cr>
 map <leader>t :FuzzyFinderTextMate<cr>
