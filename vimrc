@@ -36,7 +36,7 @@ Bundle 'tomasr/molokai'
 Bundle 'YankRing.vim'
 Bundle 'paradigm/vim-multicursor'
 Bundle 'Osse/double-tap'
-Bundle 'mileszs/ack.vim'
+Bundle 'rking/ag.vim'
 
 filetype plugin indent on     " required!
 filetype plugin on
