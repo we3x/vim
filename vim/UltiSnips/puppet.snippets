@@ -1,0 +1,7 @@
+snippet user "User declaration" !b
+user { '$1':
+  ensure     => present,
+  home       => "/home/$1",
+  managehome => true,
+}
+endsnippet
