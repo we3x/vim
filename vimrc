@@ -37,6 +37,7 @@ Bundle 'YankRing.vim'
 Bundle 'paradigm/vim-multicursor'
 Bundle 'Osse/double-tap'
 Bundle 'rking/ag.vim'
+Bundle 'myusuf3/numbers.vim'
 
 filetype plugin indent on     " required!
 filetype plugin on
@@ -46,7 +47,6 @@ set autoread
 set expandtab
 set history=500
 set magic
-set number
 set shiftwidth=4
 set smartindent
 set softtabstop=4
@@ -95,13 +95,13 @@ map <leader>p "+p
 map <bs> X
 nnoremap <leader>bo :BufOnly<cr>
 nnoremap <leader>h :set hlsearch!<cr>
-nnoremap <leader>n :set number!<cr>
 nnoremap <leader>m :NERDTreeFocus<cr>
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
-nnoremap <F3> :set invpaste paste?<CR>
+nnoremap <F3> :set invpaste paste?<cr>
+nnoremap <leader>n :NumbersToggle<cr>
 
 
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
