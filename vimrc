@@ -37,7 +37,6 @@ Bundle 'YankRing.vim'
 Bundle 'paradigm/vim-multicursor'
 Bundle 'Osse/double-tap'
 Bundle 'rking/ag.vim'
-Bundle 'myusuf3/numbers.vim'
 
 filetype plugin indent on     " required!
 filetype plugin on
@@ -69,6 +68,7 @@ set incsearch
 set visualbell t_vb=
 set showmode
 set pastetoggle=<F3> " Toggle paste on F3
+set relativenumber
 
 let g:gist_clip_command = 'xclip -selection clipboard'
 let g:gist_detect_filetype = 1
