@@ -1,6 +1,10 @@
-" Install new bundles with 'vim +BundleInstall +qall'
 set nocompatible               " be iMproved
 filetype off                   " required!
+
+filetype plugin indent on     " required!
+filetype plugin on
+
+set shell=/bin/bash
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -37,97 +41,3 @@ Bundle 'YankRing.vim'
 Bundle 'paradigm/vim-multicursor'
 Bundle 'Osse/double-tap'
 Bundle 'rking/ag.vim'
-
-filetype plugin indent on     " required!
-filetype plugin on
-
-set autoindent
-set autoread
-set expandtab
-set history=500
-set magic
-set shiftwidth=4
-set smartindent
-set softtabstop=4
-set tabstop=4
-set tw=0
-set formatoptions=l
-set lbr
-set mouse=a
-set wildmenu                    " make tab completion for files/buffers act like bash
-set wildmode=list:full          " show a list when pressing tab and complete
-set nocompatible   " Disable vi-compatibility
-set laststatus=2   " Always show the statusline
-set encoding=utf-8 " Necessary to show Unicode glyphs
-set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
-set bs=2
-set noswapfile
-set hlsearch
-set shell=/bin/bash
-set incsearch
-set visualbell t_vb=
-set showmode
-set pastetoggle=<F3> " Toggle paste on F3
-set relativenumber
-
-let g:gist_clip_command = 'xclip -selection clipboard'
-let g:gist_detect_filetype = 1
-let g:UltiSnipsDontReverseSearchPath="1"
-let g:UltiSnipsEditSplit="vertical"
-
-nnoremap NT :tabe <cr>
-nnoremap ZW :w <cr>
-nnoremap H :tabp <cr>
-nnoremap L :tabn <cr>
-nnoremap <leader>i :set smartindent!<cr>:set autoindent!<cr>
-nnoremap <leader>c :set ignorecase!<cr>
-nnoremap <leader>g :Gist<cr>
-nnoremap <f2> :NERDTreeToggle<cr>
-nnoremap <Left> <nop>
-nnoremap <Right> <nop>
-nnoremap <Up> <nop>
-nnoremap <Down> <nop>
-inoremap <f2> <esc>:NERDTreeToggle<cr>
-vnoremap <f2> <esc>:NERDTreeToggle<cr>
-map <leader>t :FuzzyFinderTextMate<cr>
-map <leader>y "+yy<cr>
-map <leader>p "+p
-map <bs> X
-nnoremap <leader>bo :BufOnly<cr>
-nnoremap <leader>h :set hlsearch!<cr>
-nnoremap <leader>m :NERDTreeFocus<cr>
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <F3> :set invpaste paste?<cr>
-nnoremap <leader>n :NumbersToggle<cr>
-
-
-highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
-match ExtraWhitespace /\t\|\s\+\%#\@<!$/
-
-autocmd InsertLeave * redraw!
-autocmd BufWritePre * :%s/\s\+$//e
-autocmd BufRead *.log* setf httplog
-autocmd BufRead *.err* setf httplog
-autocmd BufNewFile,BufRead /etc/lighttpd/* set filetype=lighttpd
-autocmd BufWritePost *.htmls make
-
-syntax on
-
-
-inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<cr>a
-
-function! s:align()
-  let p = '^\s*|\s.*\s|\s*$'
-  if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
-    let column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
-    let position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
-    Tabularize/|/l1
-    normal! 0
-    call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
-  endif
-endfunction
-
-colorscheme molokai
