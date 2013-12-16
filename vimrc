@@ -1,43 +1,40 @@
-set nocompatible               " be iMproved
-filetype off                   " required!
-
-filetype plugin indent on     " required!
-filetype plugin on
-
 set shell=/bin/bash
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+if has('vim_starting')
+  set nocompatible               " Be iMproved
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
 
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
+call neobundle#rc(expand('~/.vim/bundle/'))
 
-Bundle 'scrooloose/nerdtree'
-Bundle 'mattn/webapi-vim'
-Bundle 'mattn/gist-vim'
-Bundle 'git.zip'
-Bundle 'tpope/vim-fugitive'
-Bundle 'vim-scripts/L9'
-Bundle 'vim-scripts/FuzzyFinder'
-Bundle 'sethbc/fuzzyfinder_textmate'
-Bundle 'SirVer/ultisnips'
-Bundle 'rodjek/vim-puppet'
-Bundle 'scrooloose/syntastic'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'godlygeek/tabular'
-Bundle 'mjbrownie/vim-htmldjango_omnicomplete'
-Bundle 'vim-scripts/taglist.vim'
-Bundle 'Liberationtech/taskpacifist'
-Bundle 'framallo/taskwarrior.vim'
-Bundle 'vim-scripts/httplog'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'vim-scripts/lighttpd-syntax'
-Bundle 'BufOnly.vim'
-Bundle 'tmatilai/gitolite.vim'
-Bundle 'aliva/vim-fish'
-Bundle 'tomasr/molokai'
-Bundle 'YankRing.vim'
-Bundle 'paradigm/vim-multicursor'
-Bundle 'Osse/double-tap'
-Bundle 'rking/ag.vim'
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" Recommended to install
+NeoBundle 'Shougo/vimproc', {
+ \ 'build' : {
+ \     'windows' : 'make -f make_mingw32.mak',
+ \     'cygwin' : 'make -f make_cygwin.mak',
+ \     'mac' : 'make -f make_mac.mak',
+ \     'unix' : 'make -f make_unix.mak',
+ \    },
+ \ }
+
+NeoBundle 'scrooloose/nerdtree'
+
+NeoBundle 'mattn/webapi-vim'
+NeoBundle 'mattn/gist-vim'
+
+NeoBundle 'SirVer/ultisnips'
+NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'tomasr/molokai'
+
+filetype plugin indent on     " Required!
+"
+" Brief help
+" :NeoBundleList          - list configured bundles
+" :NeoBundleInstall(!)    - install(update) bundles
+" :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+
+" Installation check.
+NeoBundleCheck
