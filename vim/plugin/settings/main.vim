@@ -41,6 +41,8 @@ nnoremap <c-l> <c-w>l
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <F3> :set invpaste paste?<cr>
+nnoremap <leader>n :set relativenumber!<cr>
+vnoremap <leader>n :set relativenumber!<cr>
 
 syntax on
 
