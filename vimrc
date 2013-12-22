@@ -26,8 +26,10 @@ NeoBundle 'mattn/webapi-vim'
 NeoBundle 'mattn/gist-vim'
 
 NeoBundle 'SirVer/ultisnips'
-NeoBundle 'Lokaltog/vim-powerline'
-NeoBundle 'tomasr/molokai'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'baskerville/bubblegum'
+NeoBundle 'vim-scripts/TwitVim'
+
 
 filetype plugin indent on     " Required!
 "

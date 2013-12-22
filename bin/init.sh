@@ -8,4 +8,3 @@ ln -s "${VIM_ROOT_DIR}/vimrc" ~/.vimrc
 cd "${VIM_ROOT_DIR}"
 git submodule init
 git submodule update
-echo | vim -c :NeoBundleInstall +qall

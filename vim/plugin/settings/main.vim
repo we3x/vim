@@ -46,4 +46,4 @@ vnoremap <leader>n :set relativenumber!<cr>
 
 syntax on
 
-colorscheme molokai
+colorscheme bubblegum
