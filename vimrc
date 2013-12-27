@@ -29,6 +29,8 @@ NeoBundle 'SirVer/ultisnips'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'baskerville/bubblegum'
 NeoBundle 'vim-scripts/TwitVim'
+NeoBundle 'rodjek/vim-puppet'
+NeoBundle 'godlygeek/tabular'
 
 
 filetype plugin indent on     " Required!
