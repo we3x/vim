@@ -32,6 +32,7 @@ NeoBundle 'vim-scripts/TwitVim'
 NeoBundle 'rodjek/vim-puppet'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'chase/vim-ansible-yaml'
+NeoBundle 'dag/vim-fish'
 
 
 filetype plugin indent on     " Required!
