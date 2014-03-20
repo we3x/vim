@@ -22,9 +22,6 @@ NeoBundle 'Shougo/vimproc', {
 
 NeoBundle 'scrooloose/nerdtree'
 
-NeoBundle 'mattn/webapi-vim'
-NeoBundle 'mattn/gist-vim'
-
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'baskerville/bubblegum'
@@ -33,6 +30,8 @@ NeoBundle 'rodjek/vim-puppet'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'chase/vim-ansible-yaml'
 NeoBundle 'dag/vim-fish'
+NeoBundle 'vim-scripts/lodgeit.vim'
+
 
 
 filetype plugin indent on     " Required!
