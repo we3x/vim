@@ -1,0 +1,13 @@
+snippet apt "Apt declaration" !b
+- name: install package
+  apt: pkg=$1 state=latest
+  param: cvrc={{ $1 }}
+  sudo: yes
+endsnippet
+
+snippet template "Template declaration" !b
+- name: $1
+  template: src=$2 dest=$3 owner=$4 group=$5
+  sudo: yes
+endsnippet
+
