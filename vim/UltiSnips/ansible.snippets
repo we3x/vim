@@ -11,3 +11,16 @@ snippet template "Template declaration" !b
   sudo: yes
 endsnippet
 
+
+snippet yum "Yum declaration" !b
+- name: $1
+  yum: pkg=$2 state=latest
+  sudo: yes
+endsnippet
+
+
+snippet service "Service declaration" !b
+- name: $1
+  service: name=$2 enabled=yes state=started
+  sudo: yes
+endsnippet
