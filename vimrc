@@ -32,6 +32,10 @@ NeoBundle 'chase/vim-ansible-yaml'
 NeoBundle 'dag/vim-fish'
 NeoBundle 'vim-scripts/lodgeit.vim'
 NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'edsono/vim-matchit'
+
+NeoBundle 'vim-scripts/L9'
+NeoBundle 'vim-scripts/FuzzyFinder'
 
 
 
