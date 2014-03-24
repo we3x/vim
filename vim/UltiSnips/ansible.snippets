@@ -1,7 +1,6 @@
 snippet apt "Apt declaration" !b
-- name: install package
+- name: install $1
   apt: pkg=$1 state=latest
-  param: cvrc={{ $1 }}
   sudo: yes
 endsnippet
 
@@ -13,14 +12,14 @@ endsnippet
 
 
 snippet yum "Yum declaration" !b
-- name: $1
-  yum: pkg=$2 state=latest
+- name: install $1
+  yum: pkg=$1 state=latest
   sudo: yes
 endsnippet
 
 
 snippet service "Service declaration" !b
 - name: $1
-  service: name=$2 enabled=yes state=started
+  service: name=$2 enabled=yes state=$3
   sudo: yes
 endsnippet
