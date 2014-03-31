@@ -37,6 +37,9 @@ NeoBundle 'edsono/vim-matchit'
 NeoBundle 'vim-scripts/L9'
 NeoBundle 'vim-scripts/FuzzyFinder'
 
+NeoBundle 'ervandew/ag'
+NeoBundle 'Townk/vim-autoclose'
+
 
 
 filetype plugin indent on     " Required!
