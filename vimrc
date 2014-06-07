@@ -39,6 +39,7 @@ NeoBundle 'vim-scripts/FuzzyFinder'
 
 NeoBundle 'ervandew/ag'
 NeoBundle 'Townk/vim-autoclose'
+NeoBundle 'klen/python-mode'
 
 
 
