@@ -70,3 +70,21 @@ snippet copy "Copy declaration" !b
     group: $5
     mode: ${6:0644}
 endsnippet
+
+
+snippet pip "Pip declaration" !b
+- name: install $1
+  sudo: yes
+  pip:
+    name: $1
+    state: ${2:latest}
+endsnippet
+
+
+snippet django "Django declaration" !b
+- name: $1
+  sudo: yes
+  django_manage:
+    command: $2
+    app_path: $3
+endsnippet
