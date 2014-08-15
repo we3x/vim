@@ -46,6 +46,7 @@ snippet user "User declaration" !b
     name: $1
     password: "$2"
     update_password: always
+    state: present
 endsnippet
 
 
@@ -87,4 +88,52 @@ snippet django "Django declaration" !b
   django_manage:
     command: $2
     app_path: $3
+endsnippet
+
+
+snippet apt_repository "Apt_repository declaration" !b
+- name: $1
+  sudo: yes
+  apt_repository:
+    repo: $2
+    state: present
+endsnippet
+
+
+snippet command "Command declaration" !b
+- name: $1
+  sudo: yes
+  command: $2
+endsnippet
+
+
+snippet apt_key "Apt_key declaration" !b
+- name: $1
+  sudo: yes
+  apt_key:
+    url: $2
+    state: present
+endsnippet
+
+
+snippet django_manage "Django_manage declaration" !b
+- name: $1
+  sudo: yes
+  sudo_user: "{{ webapp_user }}"
+  django_manage:
+    app_path: $2
+    command: $3
+    virtualenv: "~{{ webapp_user }}/.virtualenvs/$4"
+endsnippet
+
+
+snippet git "Git declaration" !b
+- name: $1
+  sudo: yes
+  sudo_user: "{{ webapp_user }}"
+  git:
+    repo: $2
+    dest: $3
+    accept_hostkey: yes
+    depth: 1
 endsnippet
