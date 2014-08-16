@@ -137,3 +137,12 @@ snippet git "Git declaration" !b
     accept_hostkey: yes
     depth: 1
 endsnippet
+
+
+snippet get_url "Get_url declaration" !b
+- name: $1
+  get_url:
+    url: $2
+    dest: $3
+    sha256sum: $4
+endsnippet
