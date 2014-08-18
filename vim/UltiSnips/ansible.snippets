@@ -44,8 +44,7 @@ snippet user "User declaration" !b
   sudo: yes
   user:
     name: $1
-    password: "$2"
-    update_password: always
+    shell: ${2:/bin/bash}
     state: present
 endsnippet
 
