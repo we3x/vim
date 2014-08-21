@@ -40,6 +40,7 @@ NeoBundle 'klen/python-mode'
 NeoBundle 'ivanov/vim-ipython'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'vim-scripts/apachelogs.vim'
+NeoBundle 'vim-scripts/vim-multiedit'
 
 
 
