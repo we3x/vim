@@ -34,13 +34,14 @@ NeoBundle 'edsono/vim-matchit'
 NeoBundle 'vim-scripts/L9'
 NeoBundle 'vim-scripts/FuzzyFinder'
 
-NeoBundle 'ervandew/ag'
+NeoBundle 'rking/ag.vim'
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'klen/python-mode'
 NeoBundle 'ivanov/vim-ipython'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'vim-scripts/apachelogs.vim'
 NeoBundle 'vim-scripts/vim-multiedit'
+NeoBundle 'scrooloose/syntastic'
 
 
 
