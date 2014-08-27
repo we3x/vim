@@ -43,6 +43,9 @@ NeoBundle 'vim-scripts/apachelogs.vim'
 NeoBundle 'vim-scripts/vim-multiedit'
 NeoBundle 'scrooloose/syntastic'
 
+NeoBundle 'mattn/webapi-vim'
+NeoBundle 'mattn/gist-vim'
+
 
 
 filetype plugin indent on     " Required!
