@@ -25,17 +25,15 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'baskerville/bubblegum'
-NeoBundle 'godlygeek/tabular'
 NeoBundle 'chase/vim-ansible-yaml'
 NeoBundle 'dag/vim-fish'
 NeoBundle 'tomtom/tcomment_vim'
-NeoBundle 'edsono/vim-matchit'
 
 NeoBundle 'vim-scripts/L9'
 NeoBundle 'vim-scripts/FuzzyFinder'
 
 NeoBundle 'rking/ag.vim'
-NeoBundle 'Townk/vim-autoclose'
+NeoBundle 'mekanix/Vim-Autoclose'
 NeoBundle 'klen/python-mode'
 NeoBundle 'ivanov/vim-ipython'
 NeoBundle 'majutsushi/tagbar'
@@ -45,6 +43,8 @@ NeoBundle 'scrooloose/syntastic'
 
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'mattn/gist-vim'
+NeoBundle 'burnettk/vim-angular'
+NeoBundle 'pangloss/vim-javascript'
 
 
 
