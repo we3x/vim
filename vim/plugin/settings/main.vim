@@ -25,6 +25,7 @@ set visualbell t_vb=
 set showmode
 set pastetoggle=<F3> " Toggle paste on F3
 set relativenumber
+set number
 set colorcolumn=80
 
 nnoremap NT :tabe <cr>
@@ -44,6 +45,7 @@ nnoremap <c-k> <c-w>k
 nnoremap <F3> :set invpaste paste?<cr>
 nnoremap <leader>n :set relativenumber!<cr>
 vnoremap <leader>n :set relativenumber!<cr>
+""inoremap {<CR> {<CR>}<Esc>O<BS><Tab>
 
 syntax on
 
