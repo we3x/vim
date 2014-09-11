@@ -45,7 +45,7 @@ nnoremap <c-k> <c-w>k
 nnoremap <F3> :set invpaste paste?<cr>
 nnoremap <leader>n :set relativenumber!<cr>
 vnoremap <leader>n :set relativenumber!<cr>
-""inoremap {<CR> {<CR>}<Esc>O<BS><Tab>
+nnoremap gp `[v`]
 
 syntax on
 
@@ -64,3 +64,6 @@ endfunction
 
 " automatically strip trailing spaces on save
 autocmd BufWritePre * :%s/\s\+$//e
+
+" Resize splits when the window is resized
+au VimResized * exe "normal! \<c-w>="
