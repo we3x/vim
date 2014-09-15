@@ -145,3 +145,14 @@ snippet get_url "Get_url declaration" !b
     dest: $3
     sha256sum: $4
 endsnippet
+
+
+snippet cron "Cron declaration" !b
+- name: $1
+  sudo: yes
+  sudo_user: $2
+  cron:
+    name: $3
+    state: ${4:present}
+    job: $5
+endsnippet
