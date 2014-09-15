@@ -74,10 +74,9 @@ endsnippet
 
 snippet pip "Pip declaration" !b
 - name: install $1
-  sudo: yes
   pip:
-    name: $1
-    state: ${2:latest}
+    name: $2
+    state: ${3:present}
 endsnippet
 
 
