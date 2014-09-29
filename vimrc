@@ -49,6 +49,8 @@ NeoBundle 'othree/javascript-libraries-syntax.vim'
 NeoBundle 'emmet.vim'
 NeoBundle 'vim-htmldjango_omnicomplete'
 NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'tpope/vim-fugitive'
 
 
 
