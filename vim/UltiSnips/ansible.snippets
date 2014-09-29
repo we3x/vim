@@ -1,6 +1,3 @@
-# -*- mode: ansible -*-
-# vi: set ft=ansible :
-
 snippet apt "Apt declaration" !b
 - name: install $1
   sudo: yes
@@ -154,4 +151,32 @@ snippet cron "Cron declaration" !b
     name: $3
     state: ${4:present}
     job: $5
+endsnippet
+
+
+snippet unarchive "Unarchive declaration" !b
+- name: $1
+  unarchive:
+    src: $2
+    dest: $3
+endsnippet
+
+
+snippet mysql_db "Mysql_db declaration" !b
+- name: $1
+  sudo: yes
+  mysql_db:
+    name: $2
+    state: present
+endsnippet
+
+
+snippet mysql_user "Mysql_user declaration" !b
+- name: $1
+  sudo: yes
+  mysql_user:
+    name: $2
+    password: $3
+    priv: $4.*:ALL
+    state: present
 endsnippet
