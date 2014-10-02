@@ -99,6 +99,9 @@ snippet command "Command declaration" !b
 - name: $1
   sudo: yes
   command: $2
+  args:
+    chdir: $3
+    creates: $4
 endsnippet
 
 
