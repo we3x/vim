@@ -47,6 +47,8 @@ nnoremap <leader>n :set relativenumber!<cr>
 vnoremap <leader>n :set relativenumber!<cr>
 nnoremap gp `[v`]
 nnoremap <leader>s :setlocal spell spelllang=en_us<cr>
+nnoremap <c-o> :bnext<cr>
+nnoremap <c-i> :bprevious<cr>
 
 syntax on
 
