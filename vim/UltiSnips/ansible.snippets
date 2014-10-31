@@ -183,3 +183,14 @@ snippet mysql_user "Mysql_user declaration" !b
     priv: $4.*:ALL
     state: present
 endsnippet
+
+
+snippet authorized_key "Authorized_keys declaration" !b
+- name: $1
+  sudo: yes
+  authorized_key:
+    key: $2
+    manage_dir: ${3:yes}
+    user: $4
+    state: ${5:present}
+endsnippet
