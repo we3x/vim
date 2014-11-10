@@ -51,6 +51,7 @@ NeoBundle 'vim-htmldjango_omnicomplete'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-surround'
 
 
 
