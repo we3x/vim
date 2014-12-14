@@ -127,8 +127,6 @@ endsnippet
 
 snippet git "Git declaration" !b
 - name: $1
-  sudo: yes
-  sudo_user: "{{ webapp_user }}"
   git:
     repo: $2
     dest: $3
@@ -193,4 +191,12 @@ snippet authorized_key "Authorized_keys declaration" !b
     manage_dir: ${3:yes}
     user: $4
     state: ${5:present}
+endsnippet
+
+
+snippet subversion "Subversion declaration" !b
+- name: $1
+  subversion:
+    repo: $2
+    dest: $3
 endsnippet
