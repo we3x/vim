@@ -71,9 +71,8 @@ endsnippet
 
 snippet pip "Pip declaration" !b
 - name: install $1
+  sudo: yes
   pip:
-    name: $2
-    state: ${3:present}
 endsnippet
 
 
@@ -199,4 +198,11 @@ snippet subversion "Subversion declaration" !b
   subversion:
     repo: $2
     dest: $3
+endsnippet
+
+snippet gem "Gem declaration" !b
+- name: $1
+  gem:
+    name: $2
+    state: ${3:present}
 endsnippet

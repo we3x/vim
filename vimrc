@@ -53,6 +53,7 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-eunuch'
+NeoBundle 'vim-scripts/Gundo'
 
 
 
