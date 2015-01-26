@@ -23,6 +23,7 @@ Plugin 'vim-scripts/FuzzyFinder'
 
 Plugin 'rking/ag.vim'
 Plugin 'mekanix/Vim-Autoclose'
+Plugin 'davidhalter/jedi-vim'
 Plugin 'klen/python-mode'
 Plugin 'ivanov/vim-ipython'
 Plugin 'majutsushi/tagbar'
