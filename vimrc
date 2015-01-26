@@ -29,7 +29,7 @@ Plugin 'ivanov/vim-ipython'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-scripts/apachelogs.vim'
 Plugin 'vim-scripts/vim-multiedit'
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
 
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
