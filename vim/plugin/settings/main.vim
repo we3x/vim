@@ -37,12 +37,11 @@ nnoremap <Right> <nop>
 nnoremap <Up> <nop>
 nnoremap <Down> <nop>
 map <leader>y "+yy<cr>
-map <leader>p "+p
+map <leader>p "+p<cr>
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
-nnoremap <F3> :set invpaste paste?<cr>
 nnoremap <leader>n :set relativenumber!<cr>
 vnoremap <leader>n :set relativenumber!<cr>
 nnoremap gp `[v`]
@@ -53,17 +52,6 @@ nnoremap <c-i> :bprevious<cr>
 syntax on
 
 colorscheme bubblegum
-
-let &t_SI .= "\<Esc>[?2004h"
-let &t_EI .= "\<Esc>[?2004l"
-
-inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
-
-function! XTermPasteBegin()
-  set pastetoggle=<Esc>[201~
-  set paste
-  return ""
-endfunction
 
 " automatically strip trailing spaces on save
 autocmd BufWritePre * :%s/\s\+$//e

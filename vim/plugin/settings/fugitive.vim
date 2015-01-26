@@ -1,2 +1,2 @@
 nmap <leader>gd :Gdiff<cr>
-vmap <leader>gb :Gbrowse<cr>
+map <leader>gb :Gbrowse<cr>

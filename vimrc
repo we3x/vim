@@ -1,68 +1,49 @@
+set nocompatible              " be iMproved, required
 set shell=/bin/bash
+filetype off                  " required
 
-if has('vim_starting')
-  set nocompatible               " Be iMproved
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
 
-" Let NeoBundle manage NeoBundle
-NeoBundleFetch 'Shougo/neobundle.vim'
+Plugin 'scrooloose/nerdtree'
 
-" Recommended to install
-NeoBundle 'Shougo/vimproc', {
- \ 'build' : {
- \     'windows' : 'make -f make_mingw32.mak',
- \     'cygwin' : 'make -f make_cygwin.mak',
- \     'mac' : 'make -f make_mac.mak',
- \     'unix' : 'make -f make_unix.mak',
- \    },
- \ }
+Plugin 'SirVer/ultisnips'
+Plugin 'bling/vim-airline'
+Plugin 'baskerville/bubblegum'
+Plugin 'chase/vim-ansible-yaml'
+Plugin 'dag/vim-fish'
+Plugin 'tomtom/tcomment_vim'
 
-NeoBundle 'scrooloose/nerdtree'
+Plugin 'vim-scripts/L9'
+Plugin 'vim-scripts/FuzzyFinder'
 
-NeoBundle 'SirVer/ultisnips'
-NeoBundle 'bling/vim-airline'
-NeoBundle 'baskerville/bubblegum'
-NeoBundle 'chase/vim-ansible-yaml'
-NeoBundle 'dag/vim-fish'
-NeoBundle 'tomtom/tcomment_vim'
+Plugin 'rking/ag.vim'
+Plugin 'mekanix/Vim-Autoclose'
+Plugin 'klen/python-mode'
+Plugin 'ivanov/vim-ipython'
+Plugin 'majutsushi/tagbar'
+Plugin 'vim-scripts/apachelogs.vim'
+Plugin 'vim-scripts/vim-multiedit'
+Plugin 'scrooloose/syntastic'
 
-NeoBundle 'vim-scripts/L9'
-NeoBundle 'vim-scripts/FuzzyFinder'
+Plugin 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
+Plugin 'burnettk/vim-angular'
+Plugin 'pangloss/vim-javascript'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'emmet.vim'
+Plugin 'vim-htmldjango_omnicomplete'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-eunuch'
+Plugin 'vim-scripts/Gundo'
 
-NeoBundle 'rking/ag.vim'
-NeoBundle 'mekanix/Vim-Autoclose'
-NeoBundle 'klen/python-mode'
-NeoBundle 'ivanov/vim-ipython'
-NeoBundle 'majutsushi/tagbar'
-NeoBundle 'vim-scripts/apachelogs.vim'
-NeoBundle 'vim-scripts/vim-multiedit'
-NeoBundle 'scrooloose/syntastic'
-
-NeoBundle 'mattn/webapi-vim'
-NeoBundle 'mattn/gist-vim'
-NeoBundle 'burnettk/vim-angular'
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'othree/javascript-libraries-syntax.vim'
-NeoBundle 'emmet.vim'
-NeoBundle 'vim-htmldjango_omnicomplete'
-NeoBundle 'Valloric/YouCompleteMe'
-NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'tpope/vim-eunuch'
-NeoBundle 'vim-scripts/Gundo'
-
-
+call vundle#end()
 
 filetype plugin indent on     " Required!
-"
-" Brief help
-" :NeoBundleList          - list configured bundles
-" :NeoBundleInstall(!)    - install(update) bundles
-" :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-
-" Installation check.
-NeoBundleCheck
